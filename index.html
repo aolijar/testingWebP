@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="section__hero" class="section__hero">
+            <div
+                id="section__hero-scroll-content-container"
+                class="section__hero-scroll-content-container">
+                <div
+                data-percent="0"
+                data-frame="0"
+                class="section__hero-canvas-container"
+                id="section__hero-canvas-container"
+                >
+                <input
+                    aria-hidden="true"
+                    name="frames-url"
+                    type="hidden"
+                    value="/new_hero_scroll_webp/hero_scroll_frame-{{id}}.webp"
+                    data-frame-start="005"
+                    data-frame-end="129"
+                    data-frame-id-padding="3"/>
+                <canvas id="section__hero-canvas" class="section__hero-canvas"></canvas>
+            </div>
+    </section>
+    <script src="canvas-frame-scrub.js"></script>
+    <script src="scroll-observable.js"></script>
+    <script src="scroll-video.js"></script>
+  </body>
+</html>
